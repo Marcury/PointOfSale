@@ -6,14 +6,14 @@ package shop;
  */
 
 public class Product {
+   
     private String name;
     private Price price;
     private int barcode;
     private String description;
-    private int amount;                 //number of products in stock
 
     public String status(){        // prints status of this Object instance
-        return name + "," + barcode + "," + price + "," + amount +
+        return name + "," + barcode + "," + price + "," +
                 "," + price.getAmount() + "," + price.getCurrency();
     }
     
@@ -39,14 +39,6 @@ public class Product {
     
     public String getDescription() {
         return description;
-    }
-    
-    public void setAmount(int amount){
-        this.amount = amount;
-    }
-    
-    public int getAmount(){
-        return amount;
     }
     
     public void setName(String name){
