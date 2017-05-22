@@ -8,20 +8,19 @@ package shop;
 public class Product {
    
     private String name;
-    private Price price;
+    private double price;
     private int barcode;
     private String description;
 
     public String status(){        // prints status of this Object instance
-        return name + "," + barcode + "," + price + "," +
-                "," + price.getAmount() + "," + price.getCurrency();
+        return name + "," + barcode + "," + price + ",";
     }
     
     
-    public void setPrice(Price price){
+    public void setPrice(double price){
         this.price = price;
     }
-    public Price getPrice(){
+    public double getPrice(){
         return price;
     }
     
