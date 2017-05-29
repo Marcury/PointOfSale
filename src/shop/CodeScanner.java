@@ -3,6 +3,7 @@ package shop;
 /**
  *
  * @author MArcury
+ * CLass to indentyfi id of point where transaction was carried out
  */
 
 public class CodeScanner {

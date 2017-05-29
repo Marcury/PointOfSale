@@ -1,20 +1,22 @@
 package Controllers;
 
-import javax.swing.JFrame;
-import javax.swing.JPanel;
+import javax.swing.JTextField;
+
 
 /**
  *
  * @author Marcury
  */
-public class LcdDisplay extends JFrame{
-    private JPanel displayPanel = new JPanel();    
-   
-    public LcdDisplay(){
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setTitle("Point of Sale");
-        setContentPane(displayPanel);
-        pack();
-        setVisible(true);
+public abstract class LcdDisplay {
+  //printing everything on LCD
+    private static String sum;
+            
+    public static void setBcodeField(JTextField field, String bCode){
+        field.setText(bCode);
     }
+    public static void setTotalCostPrinter(JTextField field, double total){
+        sum = Double.toString(total);
+        field.setText(sum);
+    }
+            
 }
